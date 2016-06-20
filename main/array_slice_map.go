@@ -60,6 +60,11 @@ func main() {
 
 	delete(mondays, "Jan")
 	fmt.Println(mondays)
+
+	ma := map[string][]string{
+		"x" : {"1", "2", "3"},
+	}
+	fmt.Println(ma)
 }
 
 func getAvg(arr []int, size int) float32 {
