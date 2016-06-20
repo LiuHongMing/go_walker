@@ -3,6 +3,7 @@ package main
 import (
 	"log"
 	"os"
+	"fmt"
 )
 
 type Task struct {
@@ -17,5 +18,5 @@ func NewTask(command string, logger *log.Logger) *Task {
 func main() {
 	logger := log.New(os.Stdout, "", log.LstdFlags)
 	t := NewTask("run", logger)
-	t.Fatalf("fatal message ...")
+	fmt.Println(t)
 }
