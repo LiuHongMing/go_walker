@@ -4,11 +4,16 @@ import (
 	"net/http"
 	"log"
 	"fmt"
+	"os"
 )
 
 func main() {
-	http.HandleFunc("/hello", handler)
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	http.HandleFunc("/", handler)
+	err := http.ListenAndServe(":11000", nil)
+	if err != nil {
+		log.Fatal("ListenAndServe:", err)
+	}
+	os.Exit(0)
 }
 
 // handler echoes the Path component of the request URL r.
