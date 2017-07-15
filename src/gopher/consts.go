@@ -1,3 +1,7 @@
+/**
+  常量
+ */
+
 package main
 
 import "unsafe"

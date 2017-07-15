@@ -1,3 +1,7 @@
+/**
+  枚举
+ */
+
 package main
 
 const (
