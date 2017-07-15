@@ -23,4 +23,11 @@ func main() {
 	i, data[i] = 2, 100
 
 	println(data[i], data[0])
+
+	_, s:=test()
+	println(s)
+}
+
+func test() (int, string) {
+	return 1, "abc"
 }
