@@ -1,3 +1,7 @@
+/*
+  指针
+ */
+
 package main
 
 import (
@@ -26,7 +30,7 @@ func main() {
 	}
 
 	y := struct {
-		s string
+		s
 		x int
 	}{"abc", 100}
 
@@ -39,6 +43,7 @@ func main() {
 
 	fmt.Printf("%#v\n", y)
 }
+
 
 func test3() *int {
 	x := 100
