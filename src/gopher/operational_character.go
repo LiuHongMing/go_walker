@@ -5,5 +5,5 @@
 package main
 
 func main() {
-	println((0110 & 1011))
+	println((6 & 11))
 }

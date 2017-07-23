@@ -1,3 +1,7 @@
+/*
+  字符串
+ */
+
 package main
 
 import "fmt"
@@ -25,13 +29,13 @@ func main() {
 	var c1, c2 rune = '\u6211', '们'
 	println(c1 == '我', string(c2) == "\xe4\xbb\xac")
 
-	// byte
+	//byte
 	s = "abcd"
 	bs := []byte(s)
 	bs[1] = 'B'
 	println(string(bs))
 
-	// rune
+	//rune
 	u := "电脑"
 	rs := []rune(u)
 	rs[1] = '话'
@@ -39,13 +43,16 @@ func main() {
 
 	s = "abc汉字"
 
-	// byte
+	//byte
 	for i := 0; i < len(s); i++ {
 		fmt.Printf("%c,", s[i])
 	}
+
 	fmt.Printf("\n")
+
 	//rune
 	for _, r := range s {
 		fmt.Printf("%c,", r)
+		fmt.Println(r)
 	}
 }

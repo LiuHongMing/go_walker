@@ -12,6 +12,7 @@ const (
 	Thursday
 	Friday
 	Saturday
+	numberOfDays // 这个常量没有导出
 )
 
 const (
@@ -47,7 +48,7 @@ const (
 func test2(c Color) {}
 
 func main() {
-	println(Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday)
+	println(Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, numberOfDays)
 	println(KB, MB, GB, TB)
 	println(A, B, C, D)
 	println(X, Y, Z, U, V, W)

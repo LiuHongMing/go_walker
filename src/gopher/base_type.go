@@ -5,17 +5,21 @@
 
 package main
 
-import "math"
-
 func main() {
-	a, b, c, d := 071, 0x1F, 1e9, math.MinInt16
-	println(a, b, c, d)
 
-	var m byte = 100
-	var n int = int(m)
-	println(n)
+	var v1 int32 = 10
+	v2 := int32(v1) // 默认int
+	println(v1, v2)
 
-	if n { // non-bool n (type int) used as if condition
-		println("true")
-	}
+	var fv1 float32
+	fv1 = 12
+	fv2 := float32(12.0) // 默认float64
+	println(fv1 == fv2)
+
+	var val1 complex64
+	val1 = 3.2 + 12i
+	val2 := 3.2 + 12i // 默认complex128
+	val3 := complex(3.2, 12)
+	println(val1, val2, val3, real(val3), imag(val3))
+
 }

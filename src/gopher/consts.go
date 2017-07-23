@@ -4,38 +4,19 @@
 
 package main
 
-import "unsafe"
-
-const x, y int = 1, 2
-const s = "Hello World"
+const Pi = 3.14159265358979323846
+const zero = 0.0
 
 const (
-	a, b      = 10, 100
-	c    bool = false
+	size int64 = 1024
+	eof = -1
 )
 
-const (
-	i = "abc"
-	j
-)
+const u, v float32 = 0, 3
+const a, b, c = 3, 4, "foo"
 
-const (
-	o = "abc"
-	p = len(o)
-	q = unsafe.Sizeof(a)
-)
-
-const (
-	w byte = 100
-	u int  = 1e20
-)
+const mask = 1 << 3
 
 func main() {
-	const x = "xxx"
-
-	println(j)
-
-	println(o, p, q)
-
-	println(w, u)
+	println(a, b, mask)
 }
