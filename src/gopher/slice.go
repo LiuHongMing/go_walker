@@ -22,6 +22,8 @@ func main() {
 		fmt.Print(v, " ")
 	}
 
+	fmt.Println()
+
 	mySlice1 := make([]int, 5)
 	mySlice2 := make([]int, 5, 10)
 	mySlice3 := []int{1, 2, 3, 4, 5}
