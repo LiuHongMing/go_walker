@@ -27,15 +27,15 @@ func quickSort(arr []int, left int, right int) {
 	}
 	arr[p] = pivot
 	// 如果左边的元素大于2个以上才需要进行再划分
-	if p-left > 1 {
-		quickSort(arr, left, p-1)
+	if p - left > 1 {
+		quickSort(arr, left, p - 1)
 	}
 	// 如果右边的元素大于2个以上才需要进行再划分
-	if right-p > 1 {
-		quickSort(arr, p+1, right)
+	if right - p > 1 {
+		quickSort(arr, p + 1, right)
 	}
 }
 
 func QuickSort(values []int) {
-	quickSort(values, 0, len(values)-1)
+	quickSort(values, 0, len(values) - 1)
 }

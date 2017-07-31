@@ -30,7 +30,7 @@ func main() {
 	}
 
 	y := struct {
-		s
+		s string
 		x int
 	}{"abc", 100}
 
