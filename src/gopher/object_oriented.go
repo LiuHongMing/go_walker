@@ -7,15 +7,19 @@
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // 类型
 type Integer int
 
+//noinspection GoDuplicateFunctionOrMethod
 func (a Integer) Less(b Integer) bool {
 	return a < b
 }
 
+//noinspection GoDuplicateFunctionOrMethod
 func (a *Integer) Add(b Integer) {
 	*a += b
 }
@@ -51,13 +55,10 @@ func main() {
 	rect4 := &Rect{width: 100, height: 200}
 	println(rect1, rect2, rect3, rect4)
 
+	// 匿名组合
 	f := new(Foo)
-	f.Age = 23
-	f.Name = "Tom"
-	f.Base.Name = "John"
 	f.Foo()
 	f.Bar()
-	fmt.Println(f)
 }
 
 // 匿名组合
@@ -75,7 +76,7 @@ func (b *Base) Bar() {
 
 type Foo struct {
 	Name string
-	Age int
+	Age  int
 	Base
 }
 
