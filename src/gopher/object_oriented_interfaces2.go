@@ -1,12 +1,16 @@
 /*
   接口：
-      接口赋值
+      内嵌
+      赋值
       任意类型
  */
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"bufio"
+)
 
 // 类型
 type Integer int
@@ -30,6 +34,20 @@ type LessAdder interface {
 
 type Lesser interface {
 	Less(b Integer) bool
+}
+
+// 内嵌
+type Reader interface {
+	Read(b []byte) (n int, err error)
+}
+
+type Writer interface {
+	Write(b []byte) (n int, err error)
+}
+
+type ReadWriter interface {
+	Reader
+	Writer
 }
 
 func main() {
