@@ -11,8 +11,8 @@ import (
 )
 
 func main() {
-	dst := "f:/dst.txt"
-	src := "f:/vfs/upload1.log"
+	dst := "dst.txt"
+	src := "upload.log"
 	CopyFile(dst, src)
 }
 

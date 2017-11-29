@@ -59,7 +59,7 @@ func main() {
 	println("val:", toString(val))
 
 	// 类型、接口查找
-	v, ok := val.(Stringer);
+	v, ok := val.(Stringer)
 	if ok {
 		println("val.(Stringer):", v.String())
 	}
